@@ -13,12 +13,19 @@ const objectLvlWalks = document.getElementById("objectLvlWalks");
 const petBoxSingular = document.getElementById("petBoxSingular");
 const buttonRevivePet = document.getElementById("buttonRevivePet");
 
+// Audio
+var audio = new Audio("cartoon-kitty-begging-meow.wav");
+audio.volume = 0.07; //Changes the volume of the MEOW
+
+
 //petIcon//
 document.getElementById("petIcon").src="porygon.png";
 
 
 //Interacting with Pet//
 buttonPlayWith.addEventListener("click", ()=>{ //increases value of play level when clicked//
+    audio.play();
+    audio.currentTime = 0;
     objectLvlPlay.value+=20;
 })
 
@@ -26,6 +33,8 @@ buttonPlayWith.addEventListener("mouseup", ()=>{ //returns cat to neutral state 
     petIcon.src="porygon.png";
 })
 buttonFeed.addEventListener("click", ()=>{ //increases value of hunger level when clicked//
+    audio.play();
+    audio.currentTime = 0;
     objectLvlHunger.value+=20;
 })
 buttonFeed.addEventListener("mousedown", ()=>{
@@ -35,6 +44,8 @@ buttonFeed.addEventListener("mouseup", ()=>{
     petIcon.src="porygon.png";
 })
 buttonWater.addEventListener("click", ()=>{//increases value of thirst level when clicked//
+    audio.play();
+    audio.currentTime = 0;
     objectLvlThirst.value+=20;
 })
 buttonWater.addEventListener("mousedown", ()=>{
@@ -44,6 +55,8 @@ buttonWater.addEventListener("mouseup", ()=>{
     petIcon.src="porygon.png";
 })
 buttonWalk.addEventListener("click", ()=>{//increases value of walks level when clicked//
+    audio.play();
+    audio.currentTime = 0;
     objectLvlWalks.value+=20;
 })
 buttonWalk.addEventListener("mousedown", ()=>{
@@ -64,6 +77,7 @@ buttonKillPet.addEventListener("click", () => { //to make pet dead//
     alert("you are gonna regret that!")
 })
 buttonRevivePet.addEventListener("click", () => { //to revive cat//
+    audio.play();
     objectLvlPlay.value=1000;
     objectLvlHunger.value=100;
     objectLvlThirst.value=100;
