@@ -2,13 +2,13 @@
 
 *, *::before, *::after {
     box-sizing: border-box;
-    font-family: 'Bangers', cursive;
+    font-family:Arial, Helvetica, sans-serif
 }
 
 /*Need to include a LIGHT and DARK theme*/
 
 body {
-    background: linear-gradient(to right, #a3dadd, #2f386e);
+    background: linear-gradient(to right, #f89d95, #7ce2d4);
     width: 100vw;
     height: 100%;
     padding: 0;
@@ -20,7 +20,7 @@ body {
     justify-content: center;
     align-items: center;
     color: white;
-    background: rgba(0, 0, 0, .25);
+    background: transparent;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 10px;
@@ -56,7 +56,7 @@ ul li:hover {
 .mainPetBox {
     margin-left: 20%;
     margin-right: 20%;
-    background: rgba(255, 255, 255);
+    background: rgb(185, 141, 141);
     border-radius: 3em;
     filter: drop-shadow(0 0 0.45rem grey);
     display: flex;
@@ -68,14 +68,14 @@ ul li:hover {
 }
 /*FLEX CONTAINTER FOR 1PET BOX*/
 .petBoxSingular {
-    background:  #d49d49;
+    background:  #cbfaff;
     border-radius: 3em;
     filter: drop-shadow(0 0 0.45rem #c7e1f4);
     display: flex;
     padding: 15px;
     justify-content: center;
     align-items: center;
-    color: grey;
+    color: rgb(226, 139, 139);
     flex-wrap: wrap;
     max-height: 550px;
     max-width: 550px;
@@ -91,11 +91,12 @@ ul li:hover {
 }
 /*FLEX ITEMS IN 1PET BOX*/
 .petName {
-    flex: 1 1 90%;
-    margin: 3px;
+    flex: 1 1 10%;
+    margin-top: 60px;
+    margin: 10px;
     font-weight: bolder;
     font-size: 20px;
-    color: grey;
+    color: rgb(255, 255, 255);
     text-shadow: 1px 1px 2px white;
 }
 .petSubClass {
@@ -137,7 +138,7 @@ ul li:hover {
 .objectNames {
     flex: 1 1 30%;
     max-height: 30px;
-    background:#d1aeff;
+    background:#ffffff;
     /* border-radius: .5em; */
     clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
     padding: 5px;
@@ -157,7 +158,7 @@ ul li:hover {
 }
 ::-moz-progress-bar{
     height: 15px;
-    background: rgb(50, 97, 253);
+    background: rgb(251, 251, 251);
     width: 100%;
     -moz-transition: all 4s ease;
     -moz-transition-delay: 1s;
@@ -203,3 +204,4 @@ button:active {
     scale: 0.9;
     filter: drop-shadow(0 0 0.45rem #C2CAFF); 
 }
+
